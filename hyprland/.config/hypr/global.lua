@@ -1,10 +1,4 @@
 
-
-terminal    = "kitty"
-fileManager = "dolphin"
-menu        = "hyprlauncher"
-mainMod = "SUPER"
-
 TERMINAL = "kitty"
 FILE_MANAGER = "dolphin"
 APP_PICKER = "wofi --show=drun"

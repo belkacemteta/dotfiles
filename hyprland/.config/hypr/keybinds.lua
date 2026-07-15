@@ -1,13 +1,18 @@
 
 -- require("global")
 
+
+-- shortcut for tilde and backtick for 65% keyboard
+hl.bind("CTRL + ESCAPE", hl.dsp.send_shortcut({ mods = "", key = "asciitilde" }), { repeating = false })
+hl.bind("SHIFT + ESCAPE", hl.dsp.send_shortcut({ mods = "SHIFT", key = "asciitilde" }), { repeating = false })
+
 hl.bind(MAIN_MOD .. " + RETURN", hl.dsp.exec_cmd(TERMINAL))
 
 local closeWindowBind = hl.bind(MAIN_MOD .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 
 hl.bind(MAIN_MOD .. " + SHIFT + Q", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
-hl.bind(MAIN_MOD .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(MAIN_MOD .. " + E", hl.dsp.exec_cmd(FILE_MANAGER))
 hl.bind(MAIN_MOD .. " + SPACE", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(MAIN_MOD .. " + A", hl.dsp.exec_cmd(APP_PICKER))
 hl.bind(MAIN_MOD .. " + B", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
@@ -42,8 +47,8 @@ hl.bind(MAIN_MOD .. " + S",         hl.dsp.workspace.toggle_special("magic"))
 hl.bind(MAIN_MOD .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
-hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind(MAIN_MOD .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind(MAIN_MOD .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })

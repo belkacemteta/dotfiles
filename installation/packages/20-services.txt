@@ -1,0 +1,6 @@
+uwsm
+dunst
+pipewire
+wireplumber
+hyprpolkitagent
+xdg-desktop-portal-hyprland

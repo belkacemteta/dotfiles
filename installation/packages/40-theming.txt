@@ -1,0 +1,3 @@
+ttf-jetbrains-mono-nerd
+qt5-wayland
+qt6-wayland

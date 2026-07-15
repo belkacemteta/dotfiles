@@ -1,0 +1,5 @@
+waybar.service
+dunst
+hyprpolkitagent
+pipewire
+wireplumber

@@ -13,7 +13,7 @@ PS1='[\u@\h \W]\$ '
 
 
 alias u='sudo pacman -Syu'
-alias i='sudo pacman -S '
+alias i='sudo pacman -S --needed '
 alias r='sudo pacman -Rs '
 
 alias rm='rm -rI '

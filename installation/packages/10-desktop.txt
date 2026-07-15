@@ -1,0 +1,5 @@
+hyprland
+kitty
+waybar
+dolphin
+wofi
