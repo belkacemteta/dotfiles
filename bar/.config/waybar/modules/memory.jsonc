@@ -1,12 +1,11 @@
 {
   "memory": {
-    "format": "<span>{icon}</span>{used}GB",
+    "format": "[mem: {used}GB]",
     "tooltip-format": "Memory Used: {used:0.0f}/{total:0.0f} GB",
-    "format-icons": "󰘚 ",
     "states": {
 	    "warning": 75,
 	    "critical": 90
-    },
+    }
   }
 }
 

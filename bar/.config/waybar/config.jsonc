@@ -27,7 +27,7 @@
 		"custom/spacer",
 		"pulseaudio",
 		"custom/spacer",
-		"backlight",
+		"backlight"
 	],
 	"modules-center": [
 		"hyprland/workspaces"

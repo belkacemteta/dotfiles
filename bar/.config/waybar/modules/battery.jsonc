@@ -4,16 +4,11 @@
       "warning": 70,
       "critical": 20
     },
-    "format": "<span>{icon} </span>{capacity}%",
-    "format-charging": "<span>󰂄 </span>{capacity}%",
-    "format-plugged": "<span> </span>{capacity}%",
-    "format-warning": "<span>{icon} </span>{capacity}%",
-    "format-critical": "<span>{icon} </span>{capacity}%", 
-    "format-icons": [
-      "󰂎","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"
-    ],
+    "format": "[battery: {capacity}%]",
+    "format-charging": "[charging: {capacity}%]",
+    "format-plugged": "[plugged: {capacity}%]",
     "events": {
-      "on-discharging-critical": "notify-send -u critical 'Battery low! plug in charger.'",
+      "on-discharging-critical": "notify-send -u critical 'Battery low! plug in your charger.'",
       "on-charging-100": "notify-send 'Battery Full (100%)'"
     }
   }

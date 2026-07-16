@@ -1,7 +1,6 @@
 {
 	"cpu": {
-		"format": "{icon} {usage}%",
-		"format-icons": "<span rise='1200' size = '11000'>󰍛</span>",
+		"format": "[cpu: {usage}%]",
 		"states": {
 			"warning": 90
 		}

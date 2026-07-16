@@ -1,9 +1,7 @@
 {
   "backlight": {
-    "format": "<span>{icon}</span> {percent}%",
-    "format-icons": ["", "", "", "", "", "", "", "", "󰖙"],
-    "tooltip": true,
-    "tooltip-format": "brightness"
+    "format": "[brightness: {percent}%]",
+    "tooltip": false
   }
 }
 

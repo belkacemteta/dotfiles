@@ -4,10 +4,7 @@
     "interval": 2,
     "warning-threshold": 80,
     "critical-threshold": 90, 
-    "format": "<span>{icon}</span> {temperatureC}C",
-    "format-warning": "<span>{icon}</span> {temperatureC}C",
-    "format-critical": "<span>{icon}</span> {temperatureC}C",
-    "format-icons": "",
+    "format": "[temp: {temperatureC}C]",
     "tooltip": false
   }
 }

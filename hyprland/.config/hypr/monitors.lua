@@ -18,3 +18,21 @@ hl.monitor({
     position = "auto", 
     scale = 1 
 })
+
+-- Assign workspaces 1 through 5 to HDMI-A-1
+for i = 1, 5 do
+    hl.workspace_rule({
+        workspace = tostring(i),
+        monitor = "HDMI-A-1",
+        persistent = true
+    })
+end
+
+-- Assign workspaces 6 through 10 to eDP-1
+for i = 6, 10 do
+    hl.workspace_rule({
+        workspace = tostring(i),
+        monitor = "eDP-1",
+        persistent = true
+    })
+end
