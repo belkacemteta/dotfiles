@@ -3,3 +3,5 @@ dunst
 hyprpolkitagent
 pipewire
 wireplumber
+NetworkManager
+bluetooth

@@ -1,0 +1,45 @@
+{
+	"include": [
+		"~/.config/waybar/modules/hypr/window.jsonc",
+		"~/.config/waybar/modules/hypr/workspaces.jsonc",
+		"~/.config/waybar/modules/custom/kernel.jsonc",
+		"~/.config/waybar/modules/custom/nvim.jsonc",
+		"~/.config/waybar/modules/custom/nowplaying.jsonc",
+		"~/.config/waybar/modules/custom/updates.jsonc",
+		"~/.config/waybar/modules/custom/spacers.jsonc",
+		"~/.config/waybar/modules/custom/vpn.jsonc",
+		"~/.config/waybar/modules/bluetooth.jsonc",
+		"~/.config/waybar/modules/pulseaudio.jsonc",
+		"~/.config/waybar/modules/backlight.jsonc",
+		"~/.config/waybar/modules/battery.jsonc",
+		"~/.config/waybar/modules/clock.jsonc",
+		"~/.config/waybar/modules/cpu.jsonc",
+		"~/.config/waybar/modules/idle_inhibitor.jsonc",
+		"~/.config/waybar/modules/memory.jsonc",
+		"~/.config/waybar/modules/network.jsonc",
+		"~/.config/waybar/modules/temperature.jsonc",
+		"~/.config/waybar/modules/tray.jsonc"
+	],
+	"position": "top",
+	"reload_style_on_change": true,
+	"modules-left": [
+		"tray",
+		"custom/spacer",
+		"pulseaudio",
+		"custom/spacer",
+		"backlight",
+	],
+	"modules-center": [
+		"hyprland/workspaces"
+	],
+	"modules-right": [
+		"memory",
+		"custom/spacer",
+		"cpu",
+		"custom/spacer",
+		"temperature",
+		"custom/spacer",
+		"battery",
+		"clock"
+	]
+}

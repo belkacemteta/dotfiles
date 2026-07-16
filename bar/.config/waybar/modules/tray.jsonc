@@ -1,0 +1,10 @@
+{
+	"tray": {
+		"spacing": 10,
+		"icon-size": 16,
+		"expand": true,
+		"icons": {
+			"blueman": "bluetooth",
+		}
+	}
+}

@@ -1,0 +1,97 @@
+
+#tray {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: @fg_main;
+}
+
+#tray>.passive {
+	-gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+	-gtk-icon-effect: highlight;
+	background-color: @crit;
+}
+
+#temperature {
+	color: @temp_cool;
+}
+
+#memory,
+#cpu {
+	color: @cpu_fg;
+}
+
+#temperature.warning,
+#memory.warning,
+#cpu.warning {
+	color: @warn;
+}
+
+#temperature.critical,
+#memory.critical,
+#cpu.critical {
+	color: @crit;
+}
+
+#pulseaudio {
+	color: @vol_fg;
+}
+
+#pulseaudio.muted {
+	color: @vol_fg_muted;
+}
+
+#network {
+	color: @net_fg;
+}
+
+#network.disconnected {
+	color: @warn;
+}
+
+#backlight {
+	color: @backlight_fg;
+}
+
+#disk {
+	color: @disk_fg;
+}
+
+
+#battery {
+	color: @bat_good;
+}
+
+#battery.charging.warning,
+#battery.plugged.warning {
+	color: @bat_good;
+}
+
+#battery.warning {
+	color: @bat_norm;
+}
+
+#clock {
+	background-color: transparent;
+	font-size: 1.125rem;
+	padding-bottom: 4px;
+	padding-left: 20px;
+	padding-right: 10px;
+	color: @fg_main;
+}
+
+#bluetooth {
+	font-size: 17px;
+	margin: 0;
+	color: @bt_on;
+}
+
+#bluetooth.connected {
+	color: @bt_connected;
+}
+
+#bluetooth.disabled {
+	color: @bt_off;
+}

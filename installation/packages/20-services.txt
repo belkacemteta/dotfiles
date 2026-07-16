@@ -1,6 +1,9 @@
 uwsm
 dunst
-pipewire
-wireplumber
 hyprpolkitagent
 xdg-desktop-portal-hyprland
+pipewire
+pipewire-pulse
+wireplumber
+networkmanager
+bluez

@@ -1,0 +1,70 @@
+* {
+	border: none;
+	border-radius: 0px;
+	font-family: 'JetBrainsMono Nerd Font';
+	font-size: 14px;
+	min-height: 0;
+}
+
+/* Tooltips */
+tooltip {
+	background-color: @bg_main;
+	border-radius: 0px;
+	border: 2px solid @border_main;
+	padding: 6px 6px;
+	box-shadow: 6px 6px 0 @shadow;
+}
+
+tooltip label {
+	color: @fg_main;
+}
+
+/* Waybar window */
+window#waybar {
+	background-color: @bg_main;
+	border-radius: 0px;
+	border-bottom: 2px solid @fg_main;
+	color: @fg_main;
+}
+
+/* Context Menus */
+
+menu decoration {
+	box-shadow: none;
+	background: transparent;
+}
+
+menu {
+	background-color: @bg_main;
+	color: @fg_main;
+	border: 2px solid @fg_main;
+	padding: 10px 0px;
+	margin: 10px;
+	box-shadow: 6px 6px 0 @shadow;
+}
+
+menu menuitem {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+menu menuitem:hover {
+	color: @bg_main;
+	background-color: @fg_main;
+}
+
+menu separator {
+	background: @fg_main;
+	margin: 6px 4px;
+	min-height: 1px;
+}
+
+
+menu separator + separator {
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}

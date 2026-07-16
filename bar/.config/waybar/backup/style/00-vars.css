@@ -1,0 +1,7 @@
+@define-color bar-bg black;
+@define-color bar-fg white;
+@define-color bar-border #eee;
+
+
+@define-color tooltips-bg black;
+@define-color tooltips-fg white;

@@ -121,6 +121,7 @@ if ! command -v stow &> /dev/null; then
 fi
 
 backup_and_stow "hyprland"
+backup_and_stow "bar"
 backup_and_stow "terminal"
 backup_and_stow "uwsm"
 backup_and_stow "fontconfig"

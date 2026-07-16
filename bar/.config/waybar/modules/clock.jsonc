@@ -1,0 +1,17 @@
+{
+	"clock": {
+		"format": "{:%H:%M}",
+		"tooltip-format": "<big>{:%Y %B %d}</big>\n<tt><big>{calendar}</big></tt>",
+		"calendar": {
+			"first-day-of-week": 6,
+			"format": {
+				"today": "<span color='#ffffff' ><b><u>{}</u></b></span>"
+			}
+		},
+		"actions": {
+			"on-click-right": "mode",
+			"on-scroll-up": "shift_up",
+			"on-scroll-down": "shift_down"
+		}
+	}
+}

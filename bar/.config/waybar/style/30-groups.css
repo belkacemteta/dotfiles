@@ -1,0 +1,27 @@
+#battery,
+#disk,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#mode,
+#memory,
+#temperature,
+#cpu,
+#idle_inhibitor,
+#bluetooth,
+#custom-vpn,
+#custom-logout,
+#custom-spacer,
+#custom-rightend,
+#custom-updates,
+#custom-leftend,
+#custom-system,
+#custom-arch,
+#custom-launcher,
+#custom-nowplaying {
+	margin: 0;
+	border-radius: 0;
+	background-color: transparent;
+	border: none;
+}
