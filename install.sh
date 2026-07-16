@@ -121,12 +121,23 @@ if ! command -v stow &> /dev/null; then
 fi
 
 backup_and_stow "hyprland"
-backup_and_stow "bash"
+backup_and_stow "terminal"
 backup_and_stow "uwsm"
 backup_and_stow "fontconfig"
 backup_and_stow "gtk"
 
-# 6. Complete and Reboot Execution
+# 6. Change default shell to Zsh
+print_step "Changing Default Shell"
+if [ "$SHELL" != "/usr/bin/zsh" ]; then
+    print_info "Changing default shell to zsh for $USER..."
+    # 'chsh' requires a password unless run as root. We use sudo usermod to bypass the prompt cleanly in the script.
+    sudo usermod -s /usr/bin/zsh "$USER"
+    print_success "Default shell changed to Zsh."
+else
+    print_success "Zsh is already the default shell."
+fi
+
+# 7. Complete and Reboot Execution
 print_step "Installation Complete!"
 read -rp "Would you like to reboot your machine right now? [y/N]: " choice
 case "$choice" in

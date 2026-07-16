@@ -1,2 +1,5 @@
 stow
 glib2
+zsh
+zsh-autosuggestions
+starship

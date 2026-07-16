@@ -1,0 +1,17 @@
+format = """
+$directory$git_branch
+$username$hostname$character
+"""
+
+# 2. Configure the Username module
+[username]
+show_always = true
+style_user = "bold white" # Custom color for standard users
+style_root = "bold red"   # Custom color if running as root
+format = "[$user]($style)"
+
+# 3. Configure the Hostname module
+[hostname]
+ssh_only = false # Set to false so it shows on your local machine too
+style = "bold white"
+format = "[@$hostname]($style) "
