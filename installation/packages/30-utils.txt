@@ -1,3 +1,4 @@
+git
 stow
 glib2
 zsh
@@ -6,3 +7,5 @@ starship
 bluez-utils
 playerctl
 brightnessctl
+sassc
+flatpak

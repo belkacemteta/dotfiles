@@ -24,6 +24,8 @@ alias rm='rm -rI '
 alias trash="mv -t $HOME/.trash "
 alias mv='mv -i '
 
+alias restart='sudo shutdown -r now'
+
 # --- Set some apps to run without padding ---
 run_without_padding() {
     kitty @ set-spacing padding=0

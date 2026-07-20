@@ -1,3 +1,7 @@
 ttf-jetbrains-mono-nerd
 qt5-wayland
 qt6-wayland
+kvantum
+qt5ct
+qt6ct
+papirus-icon-theme

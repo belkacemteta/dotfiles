@@ -96,7 +96,30 @@ else
     print_warning "$SERVICES_FILE missing. Skipping configuration."
 fi
 
-# 5. Stow Helper Function (Handles updates & file conflicts)
+# 5. Installing Graphite GTK Theme
+print_step "Building Neobrutalist GTK Theme (Graphite)"
+
+# We clone into /tmp so the raw files clean themselves up on reboot
+THEME_DIR="/tmp/Graphite-gtk-theme"
+if [ ! -d "$THEME_DIR" ]; then
+    print_info "Cloning Graphite repository..."
+    git clone --depth=1 https://github.com/vinceliuice/Graphite-gtk-theme.git "$THEME_DIR"
+    
+    cd "$THEME_DIR" || exit
+    print_info "Compiling theme with sharp edges and dark contrast..."
+    
+    ./install.sh --round 0px --tweaks black rimless normal
+    
+    # Link it to flatpak apps if you ever use them
+    sudo flatpak override --filesystem=xdg-config/gtk-4.0 || true
+    
+    cd "$SCRIPT_DIR" || exit
+    print_success "Graphite theme built and installed locally."
+else
+    print_success "Graphite theme already present in /tmp."
+fi
+
+# 6. Stow Helper Function (Handles updates & file conflicts)
 backup_and_stow() {
     local pkg="$1"
     local target_dir="$HOME"
@@ -126,8 +149,9 @@ backup_and_stow "terminal"
 backup_and_stow "uwsm"
 backup_and_stow "fontconfig"
 backup_and_stow "gtk"
+backup_and_stow "qt"
 
-# 6. Change default shell to Zsh
+# 7. Change default shell to Zsh
 print_step "Changing Default Shell"
 if [ "$SHELL" != "/usr/bin/zsh" ]; then
     print_info "Changing default shell to zsh for $USER..."
@@ -138,7 +162,7 @@ else
     print_success "Zsh is already the default shell."
 fi
 
-# 7. Complete and Reboot Execution
+# 8. Complete and Reboot Execution
 print_step "Installation Complete!"
 read -rp "Would you like to reboot your machine right now? [y/N]: " choice
 case "$choice" in

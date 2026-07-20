@@ -1,6 +1,6 @@
 
 TERMINAL = "kitty"
-FILE_MANAGER = "dolphin"
+FILE_MANAGER = "thunar"
 APP_PICKER = "wofi --show=drun"
 STATUS_BAR = "waybar"
 
