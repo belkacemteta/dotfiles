@@ -1,2 +1,3 @@
 brave
+keepassxc
 obsidian
