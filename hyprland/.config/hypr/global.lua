@@ -1,10 +1,17 @@
+--- APPS
 
 TERMINAL = "kitty"
 FILE_MANAGER = "thunar"
 APP_PICKER = "wofi --show=drun"
 STATUS_BAR = "waybar"
 
+--- KEYS
+
 MAIN_MOD = "SUPER"
+
+--- DIRS
+
+SCRIPTS="$HOME/.config/hypr/scripts"
 
 
 --- COLORS
