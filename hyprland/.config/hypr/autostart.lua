@@ -2,6 +2,8 @@
 hl.on("hyprland.start", function ()
   hl.exec_cmd("uwsm app -- darkman run")
   hl.exec_cmd("uwsm app -- keepassxc")
+  hl.exec_cmd("uwsm app -- awww-daemon")
+  hl.exec_cmd("awww img $HOME/.config/hypr/wallpaper")
   hl.exec_cmd("gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 12'")
   hl.exec_cmd("gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 12'")
   hl.exec_cmd("gsettings set org.gnome.desktop.interface monospace-font-name 'JetBrainsMono Nerd Font 12'")

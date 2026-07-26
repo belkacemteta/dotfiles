@@ -12,11 +12,13 @@ local closeWindowBind = hl.bind(MAIN_MOD .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 
 hl.bind(MAIN_MOD .. " + SHIFT + Q", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
-hl.bind(MAIN_MOD .. " + E", hl.dsp.exec_cmd(FILE_MANAGER))
-hl.bind(MAIN_MOD .. " + SPACE", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(MAIN_MOD .. " + A", hl.dsp.exec_cmd(APP_PICKER))
+hl.bind(MAIN_MOD .. " + SHIFT + SPACE", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(MAIN_MOD .. " + B", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
 hl.bind(MAIN_MOD .. " + SHIFT + B", hl.dsp.exec_cmd("pkill -SIGUSR2 waybar"))
+
+-- Launch applications
+hl.bind(MAIN_MOD .. " + E", hl.dsp.exec_cmd(FILE_MANAGER))
+hl.bind(MAIN_MOD .. " + A", hl.dsp.exec_cmd(APP_PICKER))
 
 
 -- toggle full screen for focused window
