@@ -23,6 +23,7 @@ alias grep='grep --color=auto'
 alias u='sudo pacman -Syu'
 alias i='sudo pacman -S --needed '
 alias r='sudo pacman -Rs '
+alias q='sudo pacman -Ss '
 
 alias rm='rm -rI '
 alias trash="mv -t $HOME/.trash "

@@ -11,7 +11,6 @@ hl.bind(MAIN_MOD .. " + RETURN", hl.dsp.exec_cmd(TERMINAL))
 local closeWindowBind = hl.bind(MAIN_MOD .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 
---hl.bind(MAIN_MOD .. " + SHIFT + Q", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(MAIN_MOD .. " + SHIFT + SPACE", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(MAIN_MOD .. " + B", hl.dsp.exec_cmd("pkill -SIGUSR1 waybar"))
 hl.bind(MAIN_MOD .. " + SHIFT + B", hl.dsp.exec_cmd("pkill -SIGUSR2 waybar"))
@@ -74,3 +73,7 @@ hl.bind(MAIN_MOD .. " + SHIFT + Q",         hl.dsp.exec_cmd("power_menu.sh"))
 -- clipboard
 hl.bind(MAIN_MOD .. " + V", hl.dsp.exec_cmd("cliphist list | wofi --dmenu --prompt \"clipboard\" | cliphist decode | wl-copy"))
 hl.bind(MAIN_MOD .. " + SHIFT + V", hl.dsp.exec_cmd("cliphist wipe"))
+
+-- Screenshots
+hl.bind(MAIN_MOD .. " + P", hl.dsp.exec_cmd('grim -g "$(slurp)" - | swappy -f - '))
+hl.bind(MAIN_MOD .. " + SHIFT + P", hl.dsp.exec_cmd("grim \"$HOME/pictures/screenshots/fullscreen_$(date +%Y%m%d_%H%M%S).png\" && notify-send \"Screenshot Taken!\" \"Full screenshot has been saved to directory: ~/pictures/screenshots\""))

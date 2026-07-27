@@ -1,3 +1,4 @@
 brave
 keepassxc
 obsidian
+obs-studio
