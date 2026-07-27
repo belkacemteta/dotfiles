@@ -146,6 +146,7 @@ fi
 backup_and_stow "scripts"
 backup_and_stow "hyprland"
 backup_and_stow "bar"
+backup_and_stow "notifications"
 backup_and_stow "terminal"
 backup_and_stow "wofi"
 backup_and_stow "uwsm"

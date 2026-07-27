@@ -1,0 +1,36 @@
+[global]
+    # --- Positioning & Geometry ---
+    width = 300
+    origin = top-right
+    offset = 10x10
+    
+    # --- Neobrutalist Styling ---
+    corner_radius = 0
+    frame_width = 4
+    separator_color = frame
+    
+    # --- Typography & Spacing ---
+    font = JetBrainsMono Nerd Font 12
+    padding = 16
+    horizontal_padding = 16
+    word_wrap = yes
+    
+    # --- Behavior ---
+    timeout = 5
+
+# --- High Contrast Color Blocks ---
+[urgency_low]
+    background = "#000000"
+    foreground = "#ffffff"
+    frame_color = "#555555"
+
+[urgency_normal]
+    background = "#000000"
+    foreground = "#ffffff"
+    frame_color = "#ffffff"
+
+[urgency_critical]
+    background = "#ffffff"
+    foreground = "#ff3333"
+    frame_color = "#ff3333"
+    timeout = 0
