@@ -5,3 +5,4 @@ pipewire
 wireplumber
 NetworkManager
 bluetooth
+hyprsunset

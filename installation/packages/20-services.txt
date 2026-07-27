@@ -7,3 +7,4 @@ pipewire-pulse
 wireplumber
 networkmanager
 bluez
+hyprsunset
