@@ -11,3 +11,5 @@ sassc
 flatpak
 awww
 jq
+wl-clipboard
+cliphist

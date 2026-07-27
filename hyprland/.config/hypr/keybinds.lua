@@ -70,3 +70,6 @@ hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = tr
 -- scripts
 hl.bind(MAIN_MOD .. " + W",         hl.dsp.exec_cmd("change_wallpaper.sh"))
 hl.bind(MAIN_MOD .. " + SHIFT + Q",         hl.dsp.exec_cmd("power_menu.sh"))
+
+-- clipboard
+hl.bind(MAIN_MOD .. " + V", hl.dsp.exec_cmd("cliphist list | wofi --dmenu --prompt \"clipboard\" | cliphist decode | wl-copy"))
