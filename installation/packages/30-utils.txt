@@ -10,3 +10,4 @@ brightnessctl
 sassc
 flatpak
 awww
+jq

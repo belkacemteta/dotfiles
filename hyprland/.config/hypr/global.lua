@@ -4,6 +4,7 @@ TERMINAL = "kitty"
 FILE_MANAGER = "thunar"
 APP_PICKER = "wofi --show=drun"
 STATUS_BAR = "waybar"
+SCREEN_LOCK = "hyprlock"
 
 --- KEYS
 
