@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+  <!-- 1. Open Kitty Terminal Here -->
+  <action>
+    <icon>utilities-terminal</icon>
+    <name>Open Terminal Here</name>
+    <submenu></submenu>
+    <unique-id>1715000000000000-1</unique-id>
+    <command>kitty --directory %f</command>
+    <description>Open Kitty terminal in the current directory</description>
+    <patterns>*</patterns>
+    <startup-notify/>
+    <directories/>
+  </action>
+
+  <!-- 2. Open Folder as Root -->
+  <action>
+    <icon>dialog-password</icon>
+    <name>Open as Root</name>
+    <submenu></submenu>
+    <unique-id>1715000000000000-2</unique-id>
+    <command>pkexec thunar %f</command>
+    <description>Open Thunar with administrative privileges</description>
+    <patterns>*</patterns>
+    <directories/>
+  </action>
+
+</actions>

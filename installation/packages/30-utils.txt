@@ -13,3 +13,8 @@ awww
 jq
 wl-clipboard
 cliphist
+xdg-terminal-exec
+thunar-archive-plugin
+thunar-volman
+file-roller
+tumbler

@@ -1,6 +1,10 @@
 hyprland
 kitty
 waybar
-dolphin
 wofi
 hyprlock
+blueman
+pavucontrol
+imv
+nvim
+thunar

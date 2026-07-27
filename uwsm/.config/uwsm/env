@@ -3,3 +3,5 @@ export XDG_SESSION_DESKTOP=Hyprland
 export GTK_THEME=Graphite-Dark
 export QT_QPA_PLATFORMTHEME=qt5ct
 export PATH="$HOME/.local/bin:$PATH"
+export TERMINAL="kitty"
+export EDITOR="nvim"

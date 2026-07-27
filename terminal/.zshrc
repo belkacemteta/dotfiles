@@ -13,6 +13,11 @@ setopt sharehistory # Shares history across multiple terminal windows
 alias ls='ls --color=auto -h'
 alias ll='ls --color=auto -hl'
 alias la='ls --color=auto -hla'
+
+alias cls='cd_and_ls() { cd "$1" && ls; }; cd_and_ls'
+alias cll='cd_and_ll() { cd "$1" && ll; }; cd_and_ll'
+alias cla='cd_and_la() { cd "$1" && la; }; cd_and_la'
+
 alias grep='grep --color=auto'
 
 alias u='sudo pacman -Syu'
@@ -23,7 +28,6 @@ alias rm='rm -rI '
 alias trash="mv -t $HOME/.trash "
 alias mv='mv -i '
 
-alias restart='sudo shutdown -r now'
 
 # --- Set some apps to run without padding ---
 run_without_padding() {

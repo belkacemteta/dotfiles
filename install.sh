@@ -154,6 +154,7 @@ backup_and_stow "fontconfig"
 backup_and_stow "gtk"
 backup_and_stow "qt"
 backup_and_stow "wallpapers"
+backup_and_stow "file_manager"
 
 # 7. Change default shell to Zsh
 print_step "Changing Default Shell"
