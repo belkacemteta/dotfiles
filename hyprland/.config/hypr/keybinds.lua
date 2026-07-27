@@ -67,4 +67,4 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 -- Change wallpaper
-hl.bind(MAIN_MOD .. " + W",         hl.dsp.exec_cmd(SCRIPTS .. "/change_wallpaper.sh"))
+hl.bind(MAIN_MOD .. " + W",         hl.dsp.exec_cmd("change_wallpaper.sh"))

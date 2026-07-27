@@ -5,3 +5,5 @@ if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
         exec uwsm start hyprland-uwsm.desktop
     fi
 fi
+
+export PATH="$HOME/.local/bin:$PATH"

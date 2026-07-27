@@ -143,7 +143,7 @@ if ! command -v stow &> /dev/null; then
     sudo pacman -S --needed --noconfirm stow
 fi
 
-backup_and_stow "wallpapers"
+backup_and_stow "scripts"
 backup_and_stow "hyprland"
 backup_and_stow "bar"
 backup_and_stow "terminal"
@@ -152,6 +152,7 @@ backup_and_stow "uwsm"
 backup_and_stow "fontconfig"
 backup_and_stow "gtk"
 backup_and_stow "qt"
+backup_and_stow "wallpapers"
 
 # 7. Change default shell to Zsh
 print_step "Changing Default Shell"
