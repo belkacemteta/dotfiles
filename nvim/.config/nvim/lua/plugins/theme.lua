@@ -32,7 +32,24 @@ return {
         --- Function will be called with a ColorScheme table
         --- Refer to `extras/lua/modus_operandi.lua` or `extras/lua/modus_vivendi.lua` for the ColorScheme table
         ---@param colors ColorScheme
-        on_colors = function(colors) end,
+        on_colors = function(colors)
+          -- Visual selection & highlighting (removes the default purple/blue tint)
+          colors.visual = "#3a3a3a"               -- Was #7030af (intense purple)
+          colors.bg_hl_line = "#1a1a1a"           -- Was #2f3849 (blue-tinted dark gray)
+          colors.bg_completion = "#262626"        -- Was #2f447f (blue)
+          colors.bg_paren_match = "#444444"       -- Was #2f7f9f (teal-blue)
+          
+          -- UI accents & borders (shifts from bright blue to crisp monochrome slate/silver)
+          colors.accent = "#a6a6a6"               -- Was #79a8ff (bright blue)
+          colors.accent_dark = "#737373"          -- Was #338fff (blue)
+          colors.accent_light = "#d9d9d9"         -- Was #82b0ec (light blue)
+          colors.border = "#404040"               -- Was #646464 (medium gray)
+          colors.border_highlight = "#8e8e8e"     -- Was #C4C4C4 (bright silver)
+
+          -- Search & IncSearch (optional: replaces intense green/yellow background highlights)
+          colors.bg_yellow_intense = "#4a4a4a"    -- Subtle graphite highlight instead of yellow
+          colors.bg_green_intense = "#383838"     -- Subtle graphite highlight instead of green
+        end,
 
         --- You can override specific highlights to use other groups or a hex color
         --- Function will be called with a Highlights and ColorScheme table

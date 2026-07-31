@@ -26,6 +26,17 @@ map("n", "<leader>zC", "zM", { desc = "Close all folds in buffer" })
 map("n", "<leader>zn", "zj", { desc = "Move to next fold" })
 map("n", "<leader>zp", "zk", { desc = "Move to previous fold" })
 
+-- Indenting
+vim.keymap.set("n", "<leader>i", "==", { desc = "Auto-indent line" })
+vim.keymap.set("v", "<leader>i", "=", { desc = "Auto-indent selection" })
+vim.keymap.set("v", ">", ">gv", { desc = "Indent right and stay in visual mode" })
+vim.keymap.set("v", "<", "<gv", { desc = "Indent left and stay in visual mode" })
+
+-- Buffer
+vim.keymap.set("n", "<leader>bf", function()
+  vim.lsp.buf.format()
+end, { desc = "Format current buffer with LSP" })
+
 
 
 -- [[ Basic Autocommands ]]
