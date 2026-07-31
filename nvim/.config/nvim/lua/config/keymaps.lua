@@ -37,6 +37,9 @@ vim.keymap.set("n", "<leader>bf", function()
   vim.lsp.buf.format()
 end, { desc = "Format current buffer with LSP" })
 
+-- Neotree
+vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>", { desc = "Toggle Neo-Tree" })
+
 
 
 -- [[ Basic Autocommands ]]
