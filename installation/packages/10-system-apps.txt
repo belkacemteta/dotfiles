@@ -6,5 +6,5 @@ hyprlock
 blueman
 pavucontrol
 imv
-nvim
+neovim
 thunar

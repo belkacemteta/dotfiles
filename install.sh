@@ -156,6 +156,7 @@ backup_and_stow "qt"
 backup_and_stow "wallpapers"
 backup_and_stow "file_manager"
 backup_and_stow "swappy"
+backup_and_stow "nvim"
 
 # 7. Change default shell to Zsh
 print_step "Changing Default Shell"

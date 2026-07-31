@@ -21,3 +21,6 @@ tumbler
 grim
 slurp
 swappy
+tree
+ripgrep
+tree-sitter-cli
