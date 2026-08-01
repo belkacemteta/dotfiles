@@ -6,8 +6,7 @@ return {
         dependencies = { "nvim-tree/nvim-web-devicons" },
         opts = {
           options = {
-              --theme = "cyberdream",
-              -- Square section separators (no arrows or bubbles)
+              theme = "base16",
               component_separators = { left = "│", right = "│" },
               section_separators = { left = "", right = "" },
               globalstatus = true,
