@@ -6,7 +6,7 @@ $username$hostname$character
 right_format = "$cmd_duration"
 
 # Remove the blank line between prompts for a tighter, blockier feel
-add_newline = false
+add_newline = true
 
 [directory]
 style = "fg:#3d8bf5 bold"
