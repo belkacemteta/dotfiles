@@ -1,17 +1,31 @@
+
 format = """
-$directory$git_branch
+$directory$git_branch$git_status
 $username$hostname$character
 """
+right_format = "$cmd_duration"
 
-# 2. Configure the Username module
-[username]
-show_always = true
-style_user = "bold white" # Custom color for standard users
-style_root = "bold red"   # Custom color if running as root
-format = "[$user]($style)"
+# Remove the blank line between prompts for a tighter, blockier feel
+add_newline = false
 
-# 3. Configure the Hostname module
-[hostname]
-ssh_only = false # Set to false so it shows on your local machine too
-style = "bold white"
-format = "[@$hostname]($style) "
+[directory]
+style = "fg:#3d8bf5 bold"
+format = "[ $path ]($style)"
+truncate_to_repo = true
+
+[git_branch]
+style = "fg:#d93df5 bold"
+format = "[ $branch ]($style)"
+symbol = ""
+
+[git_status]
+style = "fg:#f5b83d bold"
+format = "[ $all_status$ahead_behind ]($style)"
+
+[character]
+success_symbol = "[ ❯ ](bold #3df58b)"
+error_symbol = "[ ❯ ](bold #f55d3d)"
+
+[cmd_duration]
+style = "fg:#ffffff bold"
+format = "[ $duration ]($style)"

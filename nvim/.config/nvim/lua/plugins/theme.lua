@@ -30,25 +30,65 @@ return {
 
         --- You can override specific color groups to use other groups or a hex color
         --- Function will be called with a ColorScheme table
-        --- Refer to `extras/lua/modus_operandi.lua` or `extras/lua/modus_vivendi.lua` for the ColorScheme table
         ---@param colors ColorScheme
         on_colors = function(colors)
-          -- Visual selection & highlighting (removes the default purple/blue tint)
-          colors.visual = "#3a3a3a"               -- Was #7030af (intense purple)
-          colors.bg_hl_line = "#1a1a1a"           -- Was #2f3849 (blue-tinted dark gray)
-          colors.bg_completion = "#262626"        -- Was #2f447f (blue)
-          colors.bg_paren_match = "#444444"       -- Was #2f7f9f (teal-blue)
+          -- Visual selection & highlighting
+          colors.visual = "#3a3a3a"               
+          colors.bg_hl_line = "#1a1a1a"           
+          colors.bg_completion = "#262626"        
+          colors.bg_paren_match = "#444444"       
           
-          -- UI accents & borders (shifts from bright blue to crisp monochrome slate/silver)
-          colors.accent = "#a6a6a6"               -- Was #79a8ff (bright blue)
-          colors.accent_dark = "#737373"          -- Was #338fff (blue)
-          colors.accent_light = "#d9d9d9"         -- Was #82b0ec (light blue)
-          colors.border = "#404040"               -- Was #646464 (medium gray)
-          colors.border_highlight = "#8e8e8e"     -- Was #C4C4C4 (bright silver)
+          -- UI accents & borders
+          colors.accent = "#a6a6a6"               
+          colors.accent_dark = "#737373"          
+          colors.accent_light = "#d9d9d9"         
+          colors.border = "#404040"               
+          colors.border_highlight = "#8e8e8e"     
 
-          -- Search & IncSearch (optional: replaces intense green/yellow background highlights)
-          colors.bg_yellow_intense = "#4a4a4a"    -- Subtle graphite highlight instead of yellow
-          colors.bg_green_intense = "#383838"     -- Subtle graphite highlight instead of green
+          -- Search & IncSearch
+          colors.bg_yellow_intense = "#4a4a4a"    
+          colors.bg_green_intense = "#383838"     
+
+          -- ====================================================================
+          -- SYNTAX HIGHLIGHTING OVERRIDES
+          -- ====================================================================
+          
+          -- Structure & Variables: Pure white (reserving gray ONLY for comments)
+          colors.fn = "#ffffff"                   
+          colors.magenta = "#ffffff"              
+          colors.keyword = "#ffffff"              
+          colors.magenta_cooler = "#ffffff"
+          colors.identifier = "#ffffff"           
+          colors.cyan = "#ffffff"
+          colors.builtin = "#ffffff"              
+          colors.magenta_warmer = "#ffffff"
+          
+          -- Data & Types: Bold, lively Neobrutalist accents
+          
+          -- Strings: Punchy, vivid golden-yellow 
+          colors.string = "#f5b83d"               
+          colors.blue_warmer = "#f5b83d"
+
+          -- Types & Classes: Sharp, clear cerulean blue
+          colors.type = "#3d8bf5"                 
+          colors.cyan_cooler = "#3d8bf5"
+          
+          -- Booleans & Warnings: Lively coral/orange-red
+          colors.blue = "#f55d3d"                 
+          colors.blue_faint = "#f55d3d"           
+
+          -- Constants & Numbers: Warm copper/brown
+          colors.constant = "#d97a3d"
+          colors.rust = "#d97a3d"
+
+          -- Regex, Escapes & Specials: Punchy flat green
+          colors.special = "#3df58b"
+          colors.green = "#3df58b"
+          colors.green_warmer = "#3df58b"
+
+          -- Preprocessors & Macros: Vivid neobrutalist magenta
+          colors.preproc = "#d93df5"
+          colors.magenta_intense = "#d93df5"
         end,
 
         --- You can override specific highlights to use other groups or a hex color
