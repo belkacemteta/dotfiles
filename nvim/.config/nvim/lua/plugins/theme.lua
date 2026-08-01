@@ -70,12 +70,12 @@ return {
           colors.blue_warmer = "#f5b83d"
 
           -- Types & Classes: Sharp, clear cerulean blue
-          colors.type = "#3d8bf5"                 
-          colors.cyan_cooler = "#3d8bf5"
+          colors.type = "#f55d3d"                 
+          colors.cyan_cooler = "#f55d3d"
           
           -- Booleans & Warnings: Lively coral/orange-red
-          colors.blue = "#f55d3d"                 
-          colors.blue_faint = "#f55d3d"           
+          colors.blue = "#3d8bf5"                 
+          colors.blue_faint = "#3d8bf5"           
 
           -- Constants & Numbers: Warm copper/brown
           colors.constant = "#d97a3d"
