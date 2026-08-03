@@ -8,8 +8,11 @@ return {
     },
     lazy = false,
     opts = {
-      close_if_last_window = false,
+      close_if_last_window = true,
       popup_border_style = "NC",
     },
+    config = function()
+      vim.keymap.set("n", "<leader>e", "<Cmd>Neotree toggle<CR>", { desc = "Toggle Neo-Tree" })
+    end,
   }
 }
